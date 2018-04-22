@@ -1,0 +1,266 @@
+body {
+  font-family: 'IM Fell Great Primer', serif;
+  line-height: 2rem;
+  /*increases size of space above and below text. Less squished*/
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* ===============
+    Main Header
+================== */
+.header{
+  background-image: url("../images/whidbey1344.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2rem 3rem 1rem 3rem;
+}
+.title{
+  margin: 0 0;
+  padding-bottom: 8rem;
+  line-height: 2.3rem;
+}
+
+/* ===============
+    Navigation
+================== */
+.nav1 ,.nav2{
+  background:#ccc;
+  background:rgba(234,229,225,0.50);
+  border: 1px solid #bcbab3;
+  margin: 0 0;
+  /*makes squares bigger*/
+  padding: 0;
+}
+.nav1 a ,.nav2 a{
+  display: inline-block;
+  /*creates large squares to click on*/
+  padding: 5px 10px;
+  text-decoration: none;
+  /*gets rid of underline on links*/
+}
+.nav1 li ,.nav2 li{
+  display:inline-block;
+  /*nav is now in a line with more clickable space around text (block level but inline)*/
+}
+
+/* =========
+    Links
+============ */
+a:link{
+  color:#6E665E;/**brown**/
+}
+a:visited {
+  color:#6E665E;
+  /**browser stores links as "visited" so need this rule**/
+}
+a:hover{
+  color:#918f88;/*gray*/
+}
+a:focus {
+  color:#918f88;
+}
+
+/* ===============
+    Main Content
+================== */
+h2{
+  font-size: 1.3rem;
+}
+ p{
+  background:#ccc;
+  background:rgba(234,229,225,0.50);
+  border: 1px solid #bcbab3;
+  font-size: .95em;
+	margin-bottom: 1.5em;
+}
+main{
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 3rem;
+}
+
+/* ============================
+    Profile picture and text
+==============================*/
+
+
+/* ====================
+    Social Media Icons
+======================= */
+.social-links{
+  text-decoration: none;
+}
+
+/* ===============
+    Recent Work
+================== */
+.recentwork{
+  /**Add background image*/
+  background:#ccc;
+  background:rgba(234,229,225,0.50);
+}
+.palace, .newyork, .lynfred{
+  width:100%;
+}
+
+/* ================
+     Testimonial
+ ================== */
+.testimonial{
+  background:#ccc;
+  background: rgba(234,229,225,0.50);
+  border: 1px solid #4A4A4A;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  /*Adds space between top of box and below photos*/
+}
+.testimonial p {
+  background:#ccc;
+  background: rgba(234,229,225,0.50);
+  border:none;
+  color: #6E665E;
+  margin: .5rem .5rem .5rem .5rem;
+}
+
+/* ===============
+    Other Works
+================== */
+
+/* ===========
+    Footer
+ ===========*/
+ .main-footer{
+   background-image: url("../images/capitolacrop.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.copyright{
+  display: block;
+  text-align: left;
+  font-size: .8rem;
+}
+
+**********************************************************
+/* =============
+  Media Queries
+===============*/
+@media (min-width:320px) {
+/* max-width: 575px*/
+
+main  {
+    margin: 0 auto;
+    /*centers on viewport*/
+    max-width: 1000px;
+    /*doesn't get any bigger than 1000px*/
+    width: 80%;
+    /*on mobile takes up 80% of viewport*/
+}
+}
+****************************
+@media (min-width:481px){
+
+}
+.main-footer{
+    /* background-image: url("../images/capitolacrop.jpg");
+    background-size: cover; */
+}
+.card{
+      display: inline-block;
+      padding:10px;
+}
+}
+****************************
+@media (min-width:641px){
+/* (min-width: 768px) */
+h1 {
+  font-size: 3rem;
+}
+.card{
+    padding:7px;
+}
+}
+
+*****************************
+@media (min-width:961px){
+  h4{
+    font-size: 1.5rem;
+  }
+
+  main{
+    width:90%;
+  }
+}
+*****************************
+@media (min-width: 1025px){
+  .header{
+    background-image: url("../images/crop1.jpg");
+    padding-top: 1rem;
+    padding-bottom: 10rem;
+      position: relative;
+}
+main{
+  width:80%;
+}
+p{
+  font-size: 1rem;
+}
+.nav1 li,.nav2 li{
+  font-size: 1.3rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+.nav1{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0px;
+}
+
+.title{
+    margin:;
+    padding-top: 1rem;
+    line-height: 2.5rem;
+    font-size: 3rem;
+  }
+.card{
+      display: inline-block;
+      padding:20px;
+  }
+
+
+.main-footer{
+    background-image: url("../images/capitolacrop.jpg");
+    padding-top: 4rem;
+    padding-bottom: 20rem;
+}
+.copyright{
+    font-size: 1rem;
+    padding-left: 10px;
+  }
+
+}
+****************************
+@media (min-width:1281px){
+  main{
+    width:70%;
+  }
+  .copyright{
+    font-size: 1rem;
+    padding-left: 10px;
+  }
+}
+/* =====================================
+  Media Query info from Stack Overflow
+=======================================*/
+/*
+@media (min-width:320px)  { smartphones, iPhone, portrait 480x320 phones  }
+@media (min-width:481px)  { portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide.  }
+@media (min-width:641px)  {  portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones }
+@media (min-width:961px)  { tablet, landscape iPad, lo-res laptops ands desktops  }
+@media (min-width:1025px) {  big landscape tablets, laptops, and desktops }
+@media (min-width:1281px) {  hi-res laptops and desktops  } */
