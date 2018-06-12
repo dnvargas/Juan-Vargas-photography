@@ -147,7 +147,7 @@ main{
   Media Queries
 ===============*/
 @media (min-width:320px) {
-/* max-width: 575px*/
+
 
 main  {
     margin: 0 auto;
@@ -161,7 +161,7 @@ main  {
 ****************************
 @media (min-width:481px){
 
-}
+
 .main-footer{
     /* background-image: url("../images/capitolacrop.jpg");
     background-size: cover; */
